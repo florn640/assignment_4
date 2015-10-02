@@ -11,7 +11,7 @@ function draw() {
 	rect(0, 310, 640, 500);
 
 	for (var i = 0; i < 35; i++) {
-		drawFlower(random(640), random(130, 310));
+		drawFlower(random(640), random(220, 500));
 	}
 
 
