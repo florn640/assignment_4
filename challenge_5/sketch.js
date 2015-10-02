@@ -4,7 +4,7 @@ var ballY = 0;
 function setup() {
 	// create a place to draw
 	createCanvas(640, 500);
-	noStroke();
+
 
 }
 
@@ -15,16 +15,28 @@ function draw() {
 	// draw the ellipse
 
 	//	if (mouseIsPressed) {
+	if (mouseIsPressed === false) {
+		ballX = mouseX;
+		ballY = mouseY;
 
-	fill(255, 255, 255);
-	ellipse(mouseX, mouseY, 53, 53);
-	fill(4, 42, 236);
-	ellipse(mouseX, mouseY, 30, 30);
-	//	}
-
-	function mouseDragged() {
-		line(mouseX, mouseY, 10, 20);
 
 	}
+	ellipse(mouseX, mouseY, 53, 53);
+	stroke(255, 255, 255);
+	strokeWeight(8);
+	line(mouseX, mouseY, ballX, ballY);
+	fill(255, 255, 255);
+	ellipse(ballX, ballY, 53, 53);
+	fill(4, 42, 236);
+	ellipse(ballX, ballY, 40, 40);
+
+
+
+	fill(255, 255, 255);
+	ellipse(ballX, ballY, 53, 53);
+	fill(4, 42, 236);
+	ellipse(ballX, ballY, 40, 40);
+
+
 
 }
