@@ -2,39 +2,39 @@ function setup() {
 	// create a place to draw
 	createCanvas(640, 500);
 	noStroke();
-	//noLoop();
+	noLoop();
 }
 
-//function draw() {
-// background (sky + grass)
-//var size = 40
-//for (var i = 0; i < 40; i++) {
-
-//draw flower
 function draw() {
 	background(91, 184, 242);
 	fill(41, 151, 2);
 	rect(0, 310, 640, 500);
-	//flower
+
+	for (var i = 0; i < 35; i++) {
+		drawFlower(random(640), random(130, 310));
+	}
+
+
+}
+//draw flower
+function drawFlower(x, y) {
+	console.log(x, y);
 	stroke(41, 139, 2);
 	strokeWeight(6);
-	line(100, 200, 100, 310);
+	line(x, y, x, y + 100);
 	stroke(41, 139, 2);
 	strokeWeight(6);
 	noStroke();
 	fill(255, 255, 255, 100);
-	ellipse(100, 200, 50, 50);
+	ellipse(x, y, 50, 50);
 	fill(255, 255, 255, 90);
-	ellipse(100, 200, 40, 40);
+	ellipse(x, y, 40, 40);
 	fill(255, 255, 255, 80);
-	ellipse(100, 200, 30, 30);
+	ellipse(x, y, 30, 30);
 	fill(255, 255, 255, 80);
-	ellipse(100, 200, 20, 20);
+	ellipse(x, y, 20, 20);
 	fill(41, 170, 20, 80);
-	ellipse(100, 200, 20, 20);
+	ellipse(x, y, 20, 20);
 	fill(41, 139, 2, 80);
-	ellipse(100, 200, 15, 15);
-
-
-
+	ellipse(x, y, 15, 15);
 }
