@@ -1,3 +1,6 @@
+var ballX = 0;
+var ballY = 0;
+
 function setup() {
 	// create a place to draw
 	createCanvas(640, 500);
@@ -10,14 +13,18 @@ function draw() {
 	background(59, 23, 28);
 
 	// draw the ellipse
+
+	//	if (mouseIsPressed) {
+
 	fill(255, 255, 255);
 	ellipse(mouseX, mouseY, 53, 53);
 	fill(4, 42, 236);
 	ellipse(mouseX, mouseY, 30, 30);
-}
+	//	}
 
-function mouseDragged() {
-	line(mouseX, mouseY, 10, 20);
+	function mouseDragged() {
+		line(mouseX, mouseY, 10, 20);
 
+	}
 
 }
