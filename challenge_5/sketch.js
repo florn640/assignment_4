@@ -25,18 +25,11 @@ function draw() {
 	stroke(255, 255, 255);
 	strokeWeight(8);
 	line(mouseX, mouseY, ballX, ballY);
-	fill(255, 255, 255);
-	ellipse(ballX, ballY, 53, 53);
-	fill(4, 42, 236);
-	ellipse(ballX, ballY, 40, 40);
-
 
 
 	fill(255, 255, 255);
 	ellipse(ballX, ballY, 53, 53);
 	fill(4, 42, 236);
 	ellipse(ballX, ballY, 40, 40);
-
-
 
 }

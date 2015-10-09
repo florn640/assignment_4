@@ -17,18 +17,32 @@ function draw() {
 	// draw X
 	//strokeWeight(10.0);
 	//strokeCap(ROUND);
+	//if (mouseX < 50) {
+	//mouseX = 50;
+	//}
+	//if (mouseY > 50) {
+	//mouseY = 50;
+	//}
+	//if (mouseY > 350) {
+	//mouseY = 350;
+	//}
 
 	stroke(194, 41, 53);
 	strokeWeight(18);
-	if (mouseX > 200)
-		mouseX = 200;
-
-
-
-	line(mouseX + 40, mouseY + 30, mouseX + 85, mouseY + 80);
+	if (mouseX > 250) {
+		mouseX = 250;
+	}
+	if (mouseX < 50) {
+		mouseX = 50;
+	}
+	if (mouseY < 50) {
+		mouseY = 50;
+	}
+	if (mouseY > 350) {
+		mouseY = 350;
+	}
+	line(mouseX - 50, mouseY - 50, mouseX + 50, mouseY + 50);
 	//	line(40, 30, 85, 80);
-	line(mouseX + 85, mouseY + 30, mouseX + 40, mouseY + 80);
-
-
+	line(mouseX - 50, mouseY + 50, mouseX + 50, mouseY - 50);
 
 }
